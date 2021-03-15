@@ -1,0 +1,185 @@
+/* Font of the whole text and a background image for the page are set here */
+body{
+  font-family: cursive;
+  background-image: url(https://i0.wp.com/www.cssscript.com/wp-content/uploads/2017/12/Animated-Particles-Background.png?fit=499%2C386&ssl=1);
+}
+
+/*Arrangements for the header positioning and properties of the header. */
+.header{
+  position: fixed;
+  width: 100%;
+  top:0;
+  left:0;
+  z-index:1;
+  background-color: white;
+  box-shadow: inset 0 0 10px 0 rgba(0,0,0,.4);
+}
+
+/* Designing a logo - red color for the first letters of the logo text */
+.red{
+  color: red; 
+} 
+
+/* Arrangement for the internal links of the menu and the distance between the menu elements */
+.menu a:link, a:visited{
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin-left:120px;
+}  
+ 
+/* Arrangement for changing the color of menu elements in case of hovering */
+.menu a:hover{
+  color: red;
+}
+
+/* Arrangements for the Eindhoven image */
+.eindhoven-image{
+  background-image: url("https://static.nationalgeographic.nl/files/styles/image_3200/public/Foto1_2.jpg?w=1600&h=900");
+  position: relative;
+  top:70px; 
+  height: 400px;
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-size: cover; 
+  border: 6px groove red;
+}
+
+/* Arrangements for the ABOUT section of the page */
+.about{
+  margin-top: 100px;
+  border: 6px groove red;
+  border-radius: 50px;
+}
+
+/* Arrangements for the table inside the ABOUT section - border, margin and padding in order to center the table. */
+.table{
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 10px;
+  border: 2px solid red;
+  border-radius: 10px;
+}
+
+/* Arrangement of the distances between the table elements */
+.table-elements{
+  padding-left: 20px; 
+}
+
+/* Basic arrangements of the info-page class that is for border and place of NATURE and NATUREforKIDS sections */
+.info-page{
+  border: 6px groove red;
+  margin-top: 100px;
+}
+
+/* Basic text properties arrangements of the list inside the NATURE section */
+.ordered-list-of-places{
+  list-style-position: inside;
+}
+
+/* Arrangement for internal link of the list elements inside the NATURE section */
+.ordered-list-of-places a:link, a:visited {
+  color: rgb(0, 0, 0);
+}
+
+/* Basic text properties arrangements of the list inside the NATUREforKIDS section */
+.unordered-list-of-places{
+  list-style-position: inside;
+}
+
+/* Arrangement for internal link of the list elements inside the NATUREforKIDS section */
+.unordered-list-of-places a:link, a:visited{
+  color: rgb(0, 0, 0);
+}
+
+/* Arrangements for positioning the pictures and texts of the places of NATURE and NATUREforKIDS sections */
+.places-info{
+  position: relative;  
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  padding: 8px; 
+  overflow: auto;
+}
+
+/* Arrangements for positioning and bordering the pictures. */
+.pictures-of-places{
+  width: 40%;
+  margin-left: -8px; 
+  padding:1px;
+  border:1px solid red;
+  background-color:yellow;
+}
+
+/* Arrangements for positioning and bordering the texts. */
+.text-of-places{
+  position: absolute;
+  left: 600px;
+  top: 80px;
+  width: 850px;
+  height: 200px;
+  padding: 10px;
+  background: radial-gradient(circle, yellow, red);
+  text-align: justify;
+  border: groove red;
+}
+
+/* Arrangement for floating right */
+.right{
+  float: right;
+}
+
+/* Arrangement for floating left */
+.left{
+  float: left;
+}
+
+/* Arrangement for centering the texts in the webpage */
+.center{
+  text-align: center;
+}
+
+/* Arrangement for properties of some of the texts in the webpage*/
+.height-and-size{
+  line-height: 2em;
+  font-size: 20px;
+}
+
+/* Arrangement for footer, positioning and bordering */
+.footer {
+    position: relative; 
+    margin-top: 25px; 
+    background-color: grey;
+    box-shadow: 5px 5px 3px 1px rgba(0,0,0,.4); 
+}
+
+/* Arrangement for resizing website in order to make reive for mobile */
+@media screen and (max-width: 600px) {
+  .menu{
+    margin-left: 0px;
+    font-size: 9px;
+  }
+  
+  .menu a:link, a:visited{
+    margin-left:10px
+  }
+    
+  .pictures-of-places{
+    width: 100%;
+    height: 250px;
+  }
+  
+  .text-of-places{
+    font-size: 9px;
+    position: relative;
+    left: 0;
+    top:0;
+    width: 100%;
+    height:auto;
+    box-sizing: border-box; 
+  }
+  
+  .height-and-size{
+    line-height: 1.5em;
+    font-size: 10px;
+  }
+}
